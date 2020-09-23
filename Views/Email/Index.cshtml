@@ -1,0 +1,326 @@
+<div class="email-inbox">
+  <nav class="rg-breadcrumb" aria-label="breadcrumb">
+    <a href="javascript:void(0);" class="toggle-page-nav-button toggle-email-filters text-primary"><span class="material-icons">format_align_right</span></a>
+    <h4 class="text-primary">Inbox</h4>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item breadcrumb-item-first"><a href="#">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page"><a href="#">Email</a></li>
+      <li class="breadcrumb-item active" aria-current="page"><a href="#">Inbox</a></li>
+    </ol>
+    <button class="btn btn-secondary btn-icon ml-auto btn-small"><span class="material-icons">settings_applications</span></button>
+  </nav>
+    <div>
+        <div class="row">
+            <div class="col-lg-3 col-md-12">
+                <div class="rg-card-simple no-header equal-height email-filters">
+                    <section>
+                      <a href="javascript:void(0);" class="toggle-email-filters text-primary"><span class="material-icons">clear</span></a>
+                      <button class="btn btn-brand btn-gradient mb-3" data-toggle="modal" data-target="#exampleModal">+ Compose Email</button>
+                        <div class="light-navigation">
+                          <ul class="sidenav-collapsible">
+                              <li class="active"><a href="javascript:void(0);"><i
+                                          class="material-icons mr-3 mr-sm-3">inbox</i><span>Input</span></a>
+                              </li>
+                              <li><a href="javascript:void(0);"><i
+                                          class="material-icons mr-3 mr-sm-3">snooze</i><span>Snoozed</span></a></li>
+                              <li><a href="javascript:void(0);"><i
+                                          class="material-icons mr-3 mr-sm-3">chat</i><span>Chat</span></a></li>
+                              <li><a href="javascript:void(0);"><i
+                                          class="material-icons mr-3 mr-sm-3">send</i><span>Sent</span></a>
+                              </li>
+                              <li><a href="javascript:void(0);"><i
+                                          class="material-icons mr-3 mr-sm-3">edit</i><span>Draft</span></a>
+                              </li>
+                              <li><a href="javascript:void(0);"><i
+                                          class="material-icons mr-3 mr-sm-3">local_offer</i><span>Labeled</span></a>
+                              </li>
+                              <li><a href="javascript:void(0);"><i
+                                          class="material-icons mr-3 mr-sm-3">stars</i><span>Starred</span></a></li>
+                              <li><a href="javascript:void(0);"><i
+                                          class="material-icons mr-3 mr-sm-3">delete</i><span>Trash</span></a></li>
+                          </ul>
+                        </div>
+                        <div class="faviorite-contact-container">
+                            <h5 class="text-weight-500 text-secondary">Favorite Contact</h5>
+                            <div class="rg-user-list">
+                              <div class="rg-user-list-item">
+                                <div class="user-pic">
+                                  <img src="~/images/users/user-01-large.jpg" class="media-image round small" alt="user">
+                                </div>
+                                <div class="user-details">
+                                  <h6 class="mb-0">John Doe</h6>
+                                  <p class="text-secondary">Front-end Developer, Tech</p>
+                                </div>
+                              </div>
+                              <div class="rg-user-list-item">
+                                <div class="user-pic">
+                                  <img src="~/images/users/user-02-large.jpg" class="media-image round small" alt="user">
+                                </div>
+                                <div class="user-details">
+                                  <h6 class="mb-0">David Strong</h6>
+                                  <p class="text-secondary">Product Manager, Design</p>
+                                </div>
+                              </div>
+                              <div class="rg-user-list-item">
+                                <div class="user-pic">
+                                  <img src="~/images/users/user-03-large.jpg" class="media-image round small" alt="user">
+                                </div>
+                                <div class="user-details">
+                                  <h6 class="mb-0">Anna Will</h6>
+                                  <p class="text-secondary">Senior Developer, Technology</p>
+                                </div>
+                              </div>
+                              <div class="rg-user-list-item">
+                                <div class="user-pic">
+                                  <img src="~/images/users/user-04-large.jpg" class="media-image round small" alt="user">
+                                </div>
+                                <div class="user-details">
+                                  <h6 class="mb-0">Lita Strew</h6>
+                                  <p class="text-secondary">Designer, UX</p>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </section>                  
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-12">
+                <div class="rg-card-simple equal-height no-header email-container">
+                    <section>
+                        <div class="email-actions">
+                            <div class="inline-actions">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="emailListCheckBox1">
+                                    <label class="custom-control-label" for="emailListCheckBox1"></label>                                
+                                </div>                        
+                                <div class="actions">
+                                    <span class="material-icons secondary link">sync</span>
+                                    <span class="material-icons secondary link">archive</span>
+                                    <span class="material-icons secondary link">report</span>
+                                    <span class="material-icons secondary link">drafts</span>
+                                    <span class="material-icons secondary link">snooze</span>
+                                    <span class="material-icons secondary link">local_offer</span>
+                                    <span class="material-icons secondary link">delete</span>
+                                </div>            
+                            </div>
+                            <div class="pagination-info">
+                                <select class="form-control">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="email-list">
+                            <div class="email-header">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="emailListCheckBox2">
+                                    <label class="custom-control-label" for="emailListCheckBox2"></label>                                
+                                </div> 
+                                <span class="material-icons text-light no-hover warning">stars</span>
+                                <span class="material-icons text-light">local_offer</span>
+                                <img src="~/images/users/user-01-large.jpg" class="media-image rounded-corner extra-small" alt="User">
+                                <h6 class="user-name">John Willing</h6>
+                                <p> <span class="text-primary text-weight-500" >Important Notice! - </span>Template is complete admin dashboard template, Purchase today! </p>
+                                <span class="time text-weight-500">10:10 AM</span>
+                            </div>
+                            <div class="email-header">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="emailListCheckBox3">
+                                    <label class="custom-control-label" for="emailListCheckBox3"></label>                                
+                                </div> 
+                                <span class="material-icons text-light">stars</span>
+                                <span class="material-icons text-light">local_offer</span>
+                                <img src="~/images/users/user-02-large.jpg" class="media-image rounded-corner extra-small" alt="User">
+                                <h6 class="user-name">Peter Pattinson</h6>
+                                <p> <span class="text-primary text-weight-500" >Hurry up! you don't want to miss on our exciting prices. - </span> A full fledged custom Admin dashboard template of all time, Template is next awesome thing. you must buy it today!</p>
+                                <span class="time text-weight-500">10:10 AM</span>
+                            </div>
+                            <div class="email-header">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="emailListCheckBox4">
+                                    <label class="custom-control-label" for="emailListCheckBox4"></label>                                
+                                </div> 
+                                <span class="material-icons text-light">stars</span>
+                                <span class="material-icons text-light info">local_offer</span>
+                                <img src="~/images/users/user-03-large.jpg" class="media-image rounded-corner extra-small" alt="User">
+                                <h6 class="user-name">Anna Strong</h6>
+                                <p> 
+                                    <span class="text-primary text-weight-500">Template is next big thing on themeforest - </span>
+                                    Checkout Our Top Selling theme, it has tons of new features, and unlimited customization options.
+                                </p>
+                                <span class="time text-weight-500">10:10 AM</span>
+                            </div>
+                            <div class="email-header">
+                              <div class="custom-control custom-checkbox">
+                                  <input type="checkbox" class="custom-control-input" id="emailListCheckBox5">
+                                  <label class="custom-control-label" for="emailListCheckBox5"></label>                                
+                              </div> 
+                              <span class="material-icons text-light">stars</span>
+                              <span class="material-icons text-light">local_offer</span>
+                              <img src="~/images/users/user-04-large.jpg" class="media-image rounded-corner extra-small" alt="User">
+                              <h6 class="user-name">Lisa strews</h6>
+                              <p>
+                                  <span class="text-primary"> Unlimited component possibilities, unlimited UI element possibilities - </span>
+                                  You are going to witness a never before experience in the world of admin template. you will lover our latest theme.
+                              </p>
+                              <span class="time text-weight-500">10:10 AM</span>
+                          </div>
+                          <div class="email-header">
+                              <div class="custom-control custom-checkbox">
+                                  <input type="checkbox" class="custom-control-input" id="emailListCheckBox6">
+                                  <label class="custom-control-label" for="emailListCheckBox6"></label>                                
+                              </div> 
+                              <span class="material-icons text-light warning">stars</span>
+                              <span class="material-icons text-light">local_offer</span>
+                              <img src="~/images/users/user-05-large.jpg" class="media-image rounded-corner extra-small" alt="User">
+                              <h6 class="user-name">Mona Lisa</h6>
+                              <p>
+                                  <span class="text-primary text-weight-500"> It is too good to resist - </span>
+                                  Our experts team is always happy to help you right from setting up the template till pushing it to production we have you covered.
+                              </p>
+                              <span class="time text-weight-500">10:10 AM</span>
+                          </div>
+                          <div class="email-header">
+                              <div class="custom-control custom-checkbox">
+                                  <input type="checkbox" class="custom-control-input" id="emailListCheckBox7">
+                                  <label class="custom-control-label" for="emailListCheckBox7"></label>                                
+                              </div> 
+                              <span class="material-icons text-light">stars</span>
+                              <span class="material-icons text-light">local_offer</span>
+                              <img src="~/images/users/user-06-large.jpg" class="media-image rounded-corner extra-small" alt="User">
+                              <h6 class="user-name">Michael Philips</h6>
+                              <p>
+                                  <span class="text-primary"> Smart layouts, pre built app layout and what not - </span>
+                                  You name it we have it, we have got covered almost all the features that an admin panel should care for.
+                              </p>
+                              <span class="time text-weight-500">10:10 AM</span>
+                          </div>
+                          <div class="email-header">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="emailListCheckBox8">
+                                <label class="custom-control-label" for="emailListCheckBox8"></label>                                
+                            </div> 
+                            <span class="material-icons text-light warning">stars</span>
+                            <span class="material-icons text-light info">local_offer</span>
+                            <img src="~/images/users/user-07-large.jpg" class="media-image rounded-corner extra-small" alt="User">
+                            <h6 class="user-name">Phil Hue</h6>
+                            <p>
+                                  <span class="text-primary text-weight-500"> Soon going to become #1 selling theme on themeforest - </span>
+                                  We are offering too many things on a very small price, hurry up!
+                            </p>
+                            <span class="time text-weight-500">10:10 AM</span>
+                        </div>
+                        <div class="email-header">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="emailListCheckBox9">
+                                <label class="custom-control-label" for="emailListCheckBox9"></label>                                
+                            </div> 
+                            <span class="material-icons text-light">stars</span>
+                            <span class="material-icons text-light">local_offer</span>
+                            <img src="~/images/users/user-08-large.jpg" class="media-image rounded-corner extra-small" alt="User">
+                            <h6 class="user-name">Stan pot</h6>
+                            <p>
+                                Checkout Our Top Selling Health Checkup Only For ₹999
+                            </p>
+                            <span class="time text-weight-500">10:10 AM</span>
+                        </div>
+                        <div class="email-header">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="emailListCheckBox10">
+                                <label class="custom-control-label" for="emailListCheckBox10"></label>                                
+                            </div> 
+                            <span class="material-icons text-light">stars</span>
+                            <span class="material-icons text-light">local_offer</span>
+                            <img src="~/images/users/user-09-large.jpg" class="media-image rounded-corner extra-small" alt="User">
+                            <h6 class="user-name">Peter drew</h6>
+                            <p>
+                              <span class="text-primary text-weight-500">We are announcing new demos every month - </span>
+                                You are not going to miss new features, because we are commited to release new demos every month.
+                            </p>
+                            <span class="time text-weight-500">10:10 AM</span>
+                        </div>
+                        </div>
+                        <nav>
+                            <ul class="pagination rg-pagination">
+                              <li class="page-item d-none d-sm-block">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                  <span class="material-icons">first_page</span>
+                                </a>
+                              </li>
+                              <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                      <span class="material-icons">navigate_before</span>
+                                    </a>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item"><a class="page-link active" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                  <span class="material-icons">navigate_next</span>
+                                </a>
+                              </li>
+                              <li class="page-item d-none d-sm-block">
+                                <a class="page-link" href="#" aria-label="Next">
+                                  <span class="material-icons">last_page</span>
+                                </a>
+                              </li>                              
+                            </ul>
+                          </nav>
+                    </section>                  
+                </div>    
+            </div>
+        </div>         
+    </div>   
+</div>
+
+<div class="modal fade rg-modal email-modal" id="exampleModal" data-backdrop="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Compose</h5>
+        <a href="javascript:void(0);" class="material-icons ml-1 mr-1 ml-auto text-secondary">minimize</a>
+        <a href="javascript:void(0);" class="material-icons ml-1 mr-1 text-secondary">crop_free</a>
+        <a href="javascript:void(0);" class="material-icons ml-1 text-secondary" data-dismiss="modal" aria-label="Close">close</a>
+        
+      </div>
+      <div class="modal-body">
+        <div class="email-to">
+            <div class="email-to-label">
+                <span class="text-secondary text-weight-500">To: </span>
+            </div>
+            <div class="email-to-tags">
+                <span class="rg-badge rg-badge-square rg-badge-secondary">john Doe</span>
+                <span class="rg-badge rg-badge-square rg-badge-secondary">Jane Doe</span>
+            </div>
+            <div class="email-to-tools">
+                <span class="text-secondary text-weight-500">CC</span>
+                <span class="text-secondary text-weight-500">BCC</span>
+            </div>
+
+        </div>
+        <div class="email-subject">
+            <form>
+              <div class="form-group">
+                  <input type="text" class="form-control" aria-describedby="emailSubject" placeholder="Subject">
+              </div>
+            </form>
+        </div>
+        <div class="email-body">
+          <div class="form-group">
+              <textarea class="form-control" rows="2" placeholder="Text area"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer text-left" style="justify-content: flex-start;">
+        <button type="button" class="btn btn-info btn-rectangle">Send</button>
+        <a href="javascript:void(0);" class="material-icons text-secondary">attachment</a>
+        <a href="javascript:void(0);" class="material-icons text-secondary ml-auto">delete</a>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="~/js/email-inbox.js"></script>

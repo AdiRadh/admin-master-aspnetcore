@@ -1,0 +1,743 @@
+﻿<div>
+  <nav class="rg-breadcrumb" aria-label="breadcrumb">
+    <h4 class="text-highlight-primary">Dashboard</h4>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item breadcrumb-item-first"><a href="#">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page"><a href="#">Dashboard</a></li>
+    </ol>
+    <button class="btn btn-secondary btn-icon ml-auto btn-small"><span
+        class="material-icons">settings_applications</span></button>
+  </nav>
+  <div class="row">
+    <div class="col-lg-3 col-md-6">
+      <div class="rg-card-numbers no-header">
+        <section class="d-flex align-items-center">
+          <div class="mr-3">
+            <i
+              class="material-icons rg-badge rg-badge-xl rg-badge-round rg-badge-highlight rg-badge-highlight-error ml-3 mr-3">card_travel</i>
+          </div>
+          <div>
+            <h3 class="mb-0 text-highlight-error">100+</h3>
+            <h6 class="mb-0 text-highlight-secondary">Project Deliveris</h6>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6">
+      <div class="rg-card-numbers no-header">
+        <section class="d-flex align-items-center">
+          <div class="mr-3">
+            <i
+              class="material-icons rg-badge rg-badge-xl rg-badge-round rg-badge-highlight rg-badge-highlight-info ml-3 mr-3">face</i>
+          </div>
+          <div>
+            <h3 class="mb-0 text-highlight-info">20+</h3>
+            <h6 class="mb-0 text-highlight-secondary">Developers Teams</h6>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6">
+      <div class="rg-card-numbers no-header">
+        <section class="d-flex align-items-center">
+          <div class="mr-3">
+            <i
+              class="material-icons rg-badge rg-badge-xl rg-badge-round rg-badge-highlight rg-badge-highlight-success ml-3 mr-3">language</i>
+          </div>
+          <div>
+            <h3 class="mb-0 text-highlight-success">7+</h3>
+            <h6 class="mb-0 text-highlight-secondary">Countries Served</h6>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6">
+      <div class="rg-card-numbers no-header">
+        <section class="d-flex align-items-center">
+          <div class="mr-3">
+            <i
+              class="material-icons rg-badge rg-badge-xl rg-badge-round rg-badge-highlight rg-badge-highlight-warning ml-3 mr-3">flag</i>
+          </div>
+          <div>
+            <h3 class="mb-0 text-highlight-warning">4+</h3>
+            <h6 class="mb-0 text-highlight-secondary">Offshore Centers</h6>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="rg-card-simple equal-height">
+        <header>
+          <h5>Last Month Summary</h5>
+        </header>
+        <section>
+          <div class="row">
+            <div class="col-md-3 col-sm-4">
+              <h4 class="display-medium text-highlight-primary mb-2">$3450</h4>
+              <h6 class="text-highlight-secondary mb-4">Current month earning</h6>
+              <h4 class="display-medium text-highlight-primary mb-1">122</h4>
+              <h6 class="text-highlight-secondary mb-4">Overall sales</h6>
+              <button class="btn btn-primary btn-icon-text mb-2 w-100"><span
+                  class="material-icons">assignment</span><span class="text">Create Report</span></button>
+              <button class="btn btn-light btn-icon-text mb-2 ml-0 w-100"><span
+                  class="material-icons">account_balance_wallet</span><span class="text">Check Balance</span></button>
+            </div>
+            <div class="col-md-9 col-sm-8">
+              <div id="earningChartDiv" style="width: 100%; height: 250px;"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="rg-card-statistics no-header highlight-primary">
+        <section>
+          <div class="row align-items-center">
+            <div class="col-md-6">
+            </div>
+            <div class="col-md-6">
+              <div class="statistics-map text-center">
+                <canvas id="statistics-card-chart"></canvas>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="rg-card-statistics no-header highlight-secondary">
+        <section>
+          <div class="row align-items-center">
+            <div class="col-md-6">
+            </div>
+            <div class="col-md-6">
+              <div class="statistics-map text-center">
+                <canvas id="statistics-card-chart2"></canvas>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="rg-card-simple equal-height">
+        <header>
+        </header>
+        <section>
+          <table class="table rg-table rg-table-simple" id="example">
+            <thead>
+              <tr>
+                <th class="text-right">
+                  <div class="form-group custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="dataTableListCheckBox1">
+                    <label class="custom-control-label" for="dataTableListCheckBox1"></label>
+                  </div>
+                </th>
+                <th>Project Name</th>
+                <th>Contact Person</th>
+                <th>Team</th>
+                <th>Status</th>
+                <th class="text-center">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-right">
+                  <div class="form-group custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="dataTableListCheckBox2">
+                    <label class="custom-control-label" for="dataTableListCheckBox2"></label>
+                  </div>
+                </td>
+                <td>
+                  <div class="rg-d-flex">
+                    <div class="mr-3">
+                      <img src="~/images/product-logos/Product-logo-01-large.png" class="media-image round extra-small"
+                        alt="Company Logo">
+                    </div>
+                    <div>
+                      <p class="text-weight-500 mb-0">F-Square Media</p>
+                      <span class="text-highlight-secondary">Square inc</span>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <a href="javascript:void(0);" class="text-highlight-info mb-0">Jonathan Strott</a>
+                </td>
+                <td>
+                  <div class="linked-users">
+                    <img src="~/images/users/user-04-large.jpg" class="media-image capsule small" alt="User" />
+                    <img src="~/images/users/user-05-large.jpg" class="media-image capsule small" alt="User" />
+                  </div>
+                </td>
+                <td>
+                  <span class="rg-badge rg-badge-highlight rg-badge-highlight-success">Completed</span>
+                </td>
+                <td class="text-center">
+                  <span class="material-icons info link" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">more_horiz</span>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                    <section>
+                      <a class="dropdown-item" href="#"> <i class="material-icons secondary">pageview</i>
+                        <span>Preview</span></a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#"> <i class="material-icons secondary">rate_review</i>
+                        <span>Edit</span></a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#"> <i class="material-icons secondary">delete </i>
+                        <span>Delete</span></a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#"> <i class="material-icons secondary">file_copy</i>
+                        <span>Export</span></a>
+                    </section>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-right">
+                  <div class="form-group custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="dataTableListCheckBox3">
+                    <label class="custom-control-label" for="dataTableListCheckBox3"></label>
+                  </div>
+                </td>
+                <td>
+                  <div class="rg-d-flex">
+                    <div class="mr-3">
+                      <img src="~/images/product-logos/Product-logo-02-large.png" class="media-image round extra-small"
+                        alt="Company Logo">
+                    </div>
+                    <div>
+                      <p class="text-weight-500 mb-0">Petals Infinity</p>
+                      <span class="text-highlight-secondary">Petals unlimited Org</span>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <a href="javascript:void(0);" class="text-highlight-info mb-0">Michael Juliet</a>
+                </td>
+                <td>
+                  <div class="linked-users">
+                    <img src="~/images/users/user-06-large.jpg" class="media-image capsule small" alt="User" />
+                    <img src="~/images/users/user-07-large.jpg" class="media-image capsule small" alt="User" />
+                  </div>
+                </td>
+                <td>
+                  <span class="rg-badge rg-badge-highlight rg-badge-highlight-warning">In Maintainance</span>
+                </td>
+                <td class="text-center">
+                  <span class="material-icons info link" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">more_horiz</span>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                    <section>
+                      <a class="dropdown-item" href="#"> <i class="material-icons secondary">pageview</i>
+                        <span>Preview</span></a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#"> <i class="material-icons secondary">rate_review</i>
+                        <span>Edit</span></a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#"> <i class="material-icons secondary">delete </i>
+                        <span>Delete</span></a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#"> <i class="material-icons secondary">file_copy</i>
+                        <span>Export</span></a>
+                    </section>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-right">
+                  <div class="form-group custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="dataTableListCheckBox4">
+                    <label class="custom-control-label" for="dataTableListCheckBox4"></label>
+                  </div>
+                </td>
+                <td>
+                  <div class="rg-d-flex">
+                    <div class="mr-3">
+                      <img src="~/images/product-logos/Product-logo-03-large.png" class="media-image round extra-small"
+                        alt="Company Logo">
+                    </div>
+                    <div>
+                      <p class="text-weight-500 mb-0">Fly The Globe</p>
+                      <span class="text-highlight-secondary">Global Trvel Agency</span>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <a href="javascript:void(0);" class="text-highlight-info mb-0">Feona Swami</a>
+                </td>
+                <td>
+                  <div class="linked-users">
+                    <img src="~/images/users/user-09-large.jpg" class="media-image capsule small" alt="User" />
+                    <img src="~/images/users/user-01-large.jpg" class="media-image capsule small" alt="User" />
+                  </div>
+                </td>
+                <td>
+                  <span class="rg-badge rg-badge-highlight rg-badge-highlight-secondary">Trending</span>
+                </td>
+                <td class="text-center">
+                  <span class="material-icons info link" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">more_horiz</span>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                    <section>
+                      <a class="dropdown-item" href="#"> <i class="material-icons secondary">pageview</i>
+                        <span>Preview</span></a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#"> <i class="material-icons secondary">rate_review</i>
+                        <span>Edit</span></a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#"> <i class="material-icons secondary">delete </i>
+                        <span>Delete</span></a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#"> <i class="material-icons secondary">file_copy</i>
+                        <span>Export</span></a>
+                    </section>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-right">
+                  <div class="form-group custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="dataTableListCheckBox5">
+                    <label class="custom-control-label" for="dataTableListCheckBox5"></label>
+                  </div>
+                </td>
+                <td>
+                  <div class="rg-d-flex">
+                    <div class="mr-3">
+                      <img src="~/images/product-logos/Product-logo-07-large.png" class="media-image round extra-small"
+                        alt="Company Logo">
+                    </div>
+                    <div>
+                      <p class="text-weight-500 mb-0">Mountain Store</p>
+                      <span class="text-highlight-secondary">Mountain Publication LTD</span>
+                    </div>
+                  </div>
+
+                </td>
+                <td>
+                  <a href="javascript:void(0);" class="text-highlight-info mb-0">Martin Jew</a>
+                </td>
+                <td>
+                  <div class="linked-users">
+                    <img src="~/images/users/user-02-large.jpg" class="media-image capsule small" alt="User" />
+                    <img src="~/images/users/user-03-large.jpg" class="media-image capsule small" alt="User" />
+                  </div>
+                </td>
+                <td>
+                  <span class="rg-badge rg-badge-highlight rg-badge-highlight-light">Popular</span>
+                </td>
+                <td class="text-center">
+                  <span class="material-icons info link" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">more_horiz</span>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                    <section>
+                      <a class="dropdown-item" href="#"> <i class="material-icons secondary">pageview</i>
+                        <span>Preview</span></a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#"> <i class="material-icons secondary">rate_review</i>
+                        <span>Edit</span></a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#"> <i class="material-icons secondary">delete </i>
+                        <span>Delete</span></a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#"> <i class="material-icons secondary">file_copy</i>
+                        <span>Export</span></a>
+                    </section>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-right">
+                  <div class="form-group custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="dataTableListCheckBox6">
+                    <label class="custom-control-label" for="dataTableListCheckBox6"></label>
+                  </div>
+                </td>
+                <td>
+                  <div class="rg-d-flex">
+                    <div class="mr-3">
+                      <img src="~/images/product-logos/Product-logo-04-large.png" class="media-image round extra-small"
+                        alt="Company Logo">
+                    </div>
+                    <div>
+                      <p class="text-weight-500 mb-0">Infinity Circle</p>
+                      <span class="text-highlight-secondary">Cicle studios</span>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <a href="javascript:void(0);" class="text-highlight-info mb-0">Pink Stage</a>
+                </td>
+                <td>
+                  <div class="linked-users">
+                    <img src="~/images/users/user-01-large.jpg" class="media-image capsule small" alt="User" />
+                    <img src="~/images/users/user-05-large.jpg" class="media-image capsule small" alt="User" />
+                  </div>
+                </td>
+                <td>
+                  <span class="rg-badge rg-badge-highlight rg-badge-highlight-info">Check Updates</span>
+                </td>
+                <td class="text-center">
+                  <span class="material-icons info link" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">more_horiz</span>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                    <section>
+                      <a class="dropdown-item" href="#"> <i class="material-icons secondary">pageview</i>
+                        <span>Preview</span></a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#"> <i class="material-icons secondary">rate_review</i>
+                        <span>Edit</span></a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#"> <i class="material-icons secondary">delete </i>
+                        <span>Delete</span></a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#"> <i class="material-icons secondary">file_copy</i>
+                        <span>Export</span></a>
+                    </section>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-right">
+                  <div class="form-group custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="dataTableListCheckBox7">
+                    <label class="custom-control-label" for="dataTableListCheckBox7"></label>
+                  </div>
+                </td>
+                <td>
+                  <div class="rg-d-flex">
+                    <div class="mr-3">
+                      <img src="~/images/product-logos/Product-logo-06-large.png" class="media-image round extra-small"
+                        alt="Company Logo">
+                    </div>
+                    <div>
+                      <p class="text-weight-500 mb-0">4 Stacks</p>
+                      <span class="text-highlight-secondary">Four Stacks Pvt Ltd</span>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <a href="javascript:void(0)" class="text-highlight-info mb-0">4 Stacks</a>
+                </td>
+                <td>
+                  <div class="linked-users">
+                    <img src="~/images/users/user-07-large.jpg" class="media-image capsule small" alt="User" />
+                    <img src="~/images/users/user-02-large.jpg" class="media-image capsule small" alt="User" />
+                  </div>
+                </td>
+                <td>
+                  <span class="rg-badge rg-badge-highlight rg-badge-highlight-error">Hot</span>
+                </td>
+                <td class="text-center">
+                  <span class="material-icons info link" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">more_horiz</span>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                    <section>
+                      <a class="dropdown-item" href="#"> <i class="material-icons secondary">pageview</i>
+                        <span>Preview</span></a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#"> <i class="material-icons secondary">rate_review</i>
+                        <span>Edit</span></a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#"> <i class="material-icons secondary">delete </i>
+                        <span>Delete</span></a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#"> <i class="material-icons secondary">file_copy</i>
+                        <span>Export</span></a>
+                    </section>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-right">
+                  <div class="form-group custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="dataTableListCheckBox8">
+                    <label class="custom-control-label" for="dataTableListCheckBox8"></label>
+                  </div>
+                </td>
+                <td>
+                  <div class="rg-d-flex">
+                    <div class="mr-3">
+                      <img src="~/images/product-logos/Product-logo-05-large.png" class="media-image round extra-small"
+                        alt="Company Logo">
+                    </div>
+                    <div>
+                      <p class="text-weight-500 mb-0">Round Trip</p>
+                      <span class="text-highlight-secondary">Round Trip Agency</span>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <a href="javascript:void(0);" class="text-highlight-info mb-0">Round Trip</a>
+                </td>
+                <td>
+                  <div class="linked-users">
+                    <img src="~/images/users/user-08-large.jpg" class="media-image capsule small" alt="User" />
+                    <img src="~/images/users/user-07-large.jpg" class="media-image capsule small" alt="User" />
+                  </div>
+                </td>
+                <td>
+                  <span class="rg-badge rg-badge-highlight rg-badge-highlight-primary">Completed</span>
+                </td>
+                <td class="text-center">
+                  <span class="material-icons info link" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">more_horiz</span>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                    <section>
+                      <a class="dropdown-item" href="#"> <i class="material-icons secondary">pageview</i>
+                        <span>Preview</span></a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#"> <i class="material-icons secondary">rate_review</i>
+                        <span>Edit</span></a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#"> <i class="material-icons secondary">delete </i>
+                        <span>Delete</span></a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#"> <i class="material-icons secondary">file_copy</i>
+                        <span>Export</span></a>
+                    </section>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="rg-card-action equal-height rg-card-highlight-header heightlight-info">
+        <header>
+          <div class="heading">
+            <h5>Analysis report</h5>
+          </div>
+          <div class="inline-actions">
+            <span class="material-icons link" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">more_horiz</span>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Day</a>
+              <a class="dropdown-item" href="#">Week</a>
+              <a class="dropdown-item" href="#">Month</a>
+            </div>
+          </div>
+          <div class="heightlight-content floating-highlight-content">
+            <h1 class=" display-extra-large mb-0">12,540</h1>
+            <div class="mb-3">
+              <span class="material-icons h5 text-highlight-primary-inverse">show_chart</span>
+              <span class="h5 text-highlight-primary-inverse ml-2">321 (2.05%)</span>
+            </div>
+          </div>
+        </header>
+        <section>
+          <div class="rg-user-list">
+            <div class="rg-user-list-item">
+              <div class="user-pic">
+                <img src="~/images/users/user-01-large.jpg" class="media-image round small" alt="user">
+              </div>
+              <div class="user-details">
+                <h6 class="mb-0">Mike Doe</h6>
+                <p class="text-highlight-secondary">Delivery Manager</p>
+              </div>
+              <div class="user-action">
+                <span class="rg-badge rg-badge-round-lg-text rg-badge-success">Active</span>
+                <span class="material-icons text-highlight-secondary ml-4">person_add</span>
+              </div>
+            </div>
+
+            <div class="rg-user-list-item">
+              <div class="user-pic">
+                <img src="~/images/users/user-02-large.jpg" class="media-image round small" alt="user">
+              </div>
+              <div class="user-details">
+                <h6 class="mb-0">David Strew</h6>
+                <p class="text-highlight-secondary">Sales Execcutive</p>
+              </div>
+              <div class="user-action">
+                <span class="rg-badge rg-badge-round-lg-text rg-badge-info">Full Time</span>
+                <span class="material-icons text-highlight-secondary ml-4">person_add</span>
+              </div>
+            </div>
+
+            <div class="rg-user-list-item">
+              <div class="user-pic">
+                <img src="~/images/users/user-03-large.jpg" class="media-image round small" alt="user">
+              </div>
+              <div class="user-details">
+                <h6 class="mb-0">Lisa Ray</h6>
+                <p class="text-highlight-secondary">Technical Writer</p>
+              </div>
+              <div class="user-action">
+                <span class="rg-badge rg-badge-round-lg-text rg-badge-warning">Part Time</span>
+                <span class="material-icons text-highlight-secondary ml-4">person_add</span>
+              </div>
+            </div>
+
+            <div class="rg-user-list-item">
+              <div class="user-pic">
+                <img src="~/images/users/user-04-large.jpg" class="media-image round small" alt="user">
+              </div>
+              <div class="user-details">
+                <h6 class="mb-0">Stephany Doe</h6>
+                <p class="text-highlight-secondary">Admin</p>
+              </div>
+              <div class="user-action">
+                <span class="rg-badge rg-badge-round-lg-text rg-badge-primary">Full Time</span>
+                <span class="material-icons text-highlight-secondary ml-4">person_add</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="rg-card-simple equal-height">
+        <header>
+          <h5>Featured Blogs</h5>
+        </header>
+        <section>
+          <div class="rg-blog-list">
+            <div class="rg-blog-list-item">
+              <div class="blog-pic">
+                <img src="~/images/blog/blog-01-large.jpg" class="media-blog-image rounded-corner extra-small" alt="user">
+              </div>
+              <div class="blog-details">
+                <h6 class="mb-0">Template</h6>
+                <p class="text-highlight-secondary">8 hours ago</p>
+              </div>
+            </div>
+            <div class="rg-blog-list-item">
+              <div class="blog-pic">
+                <img src="~/images/blog/blog-04-large.jpg" class="media-blog-image rounded-corner extra-small" alt="user">
+              </div>
+              <div class="blog-details">
+                <h6 class="mb-0">Multiple Demos in Template</h6>
+                <p class="text-highlight-secondary">8 hours ago</p>
+              </div>
+            </div>
+            <div class="rg-blog-list-item">
+              <div class="blog-pic">
+                <img src="~/images/blog/blog-02-large.jpg" class="media-blog-image rounded-corner extra-small" alt="user">
+              </div>
+              <div class="blog-details">
+                <h6 class="mb-0">Simple yet standards Code</h6>
+                <p class="text-highlight-secondary">8 hours ago</p>
+              </div>
+            </div>
+            <div class="rg-blog-list-item">
+              <div class="blog-pic">
+                <img src="~/images/blog/blog-03-large.jpg" class="media-blog-image rounded-corner extra-small" alt="user">
+              </div>
+              <div class="blog-details">
+                <h6 class="mb-0">All flavours development</h6>
+                <p class="text-highlight-secondary">8 hours ago</p>
+              </div>
+            </div>
+            <div class="rg-blog-list-item">
+              <div class="blog-pic">
+                <img src="~/images/blog/blog-05-large.jpg" class="media-blog-image rounded-corner extra-small" alt="user">
+              </div>
+              <div class="blog-details">
+                <h6 class="mb-0">Standardized prototype</h6>
+                <p class="text-highlight-secondary">8 hours ago</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="rg-card-simple equal-height">
+        <header>
+          <h5>User Data List</h5>
+        </header>
+        <section>
+          <div class="rg-user-data-list">
+            <div class="rg-user-data-list-item">
+              <div class="user-pic">
+                <img src="~/images/users/user-08-large.jpg" class="media-image rounded-corner small" alt="user">
+              </div>
+              <h6 class="mb-0 ml-3">Prop Steward</h6>
+              <h5 class="text-highlight-error mb-0 ml-auto">325</h5>
+              <span class="material-icons text-highlight-error text-extra-large ">arrow_downward</span>
+              <a href="#" class="ml-3">Manage</a>
+            </div>
+            <div class="rg-user-data-list-item">
+              <div class="user-pic">
+                <img src="~/images/users/user-09-large.jpg" class="media-image rounded-corner small" alt="user">
+              </div>
+              <h6 class="mb-0 ml-3">John Doe</h6>
+              <h5 class="text-highlight-success mb-0 ml-auto">120</h5>
+              <span class="material-icons text-highlight-success text-extra-large ">arrow_upward</span>
+              <a href="#" class="ml-3">Manage</a>
+            </div>
+            <div class="rg-user-data-list-item">
+              <div class="user-pic">
+                <img src="~/images/users/user-01-large.jpg" class="media-image rounded-corner small" alt="user">
+              </div>
+              <h6 class="mb-0 ml-3">Joseph Doe</h6>
+              <h5 class="text-highlight-error mb-0 ml-auto">254</h5>
+              <span class="material-icons text-highlight-error text-extra-large ">arrow_downward</span>
+              <a href="#" class="ml-3">Manage</a>
+            </div>
+            <div class="rg-user-data-list-item">
+              <div class="user-pic">
+                <img src="~/images/users/user-02-large.jpg" class="media-image rounded-corner small" alt="user">
+              </div>
+              <h6 class="mb-0 ml-3">Bill Doe</h6>
+              <h5 class="text-highlight-success mb-0 ml-auto">114</h5>
+              <span class="material-icons text-highlight-success text-extra-large ">arrow_upward</span>
+              <a href="#" class="ml-3">Manage</a>
+            </div>
+            <div class="rg-user-data-list-item">
+              <div class="user-pic">
+                <img src="~/images/users/user-03-large.jpg" class="media-image rounded-corner small" alt="user">
+              </div>
+              <h6 class="mb-0 ml-3">Jane Doe</h6>
+              <h5 class="text-highlight-success mb-0 ml-auto">325</h5>
+              <span class="material-icons text-highlight-success text-extra-large ">arrow_upward</span>
+              <a href="#" class="ml-3">Manage</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="rg-card-simple">
+        <header>
+          <h5>Monthly earning statistics</h5>
+        </header>
+        <section>
+          <div id="chart">
+            <div id="amBarChart" style="height: 250px;"></div>
+          </div>
+          <div class="expences-list">
+            <div class="d-flex mb-3">
+              <p class="text-highlight-secondary mb-0">Project Deliveries</p>
+              <h5 class="ml-auto mb-0">1500</h5>
+            </div>
+            <div class="d-flex mb-3">
+              <p class="text-highlight-secondary mb-0">Estimated Total Hours</p>
+              <h5 class="ml-auto mb-0">1652</h5>
+            </div>
+            <div class="d-flex mb-3">
+              <p class="text-highlight-secondary mb-0">Happy Customers around the world</p>
+              <h5 class="ml-auto mb-0">1068</h5>
+            </div>
+            <div class="d-flex mb-3">
+              <p class="text-highlight-secondary mb-0">Number of active customers</p>
+              <h5 class="ml-auto mb-0">690</h5>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="~/js/dashboard.js"></script>

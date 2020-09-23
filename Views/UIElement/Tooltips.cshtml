@@ -1,0 +1,89 @@
+<div>
+  <nav class="rg-breadcrumb" aria-label="breadcrumb">
+    <h4 class="text-primary">Tool tips</h4>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item breadcrumb-item-first"><a href="#">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page"><a href="#">Tool tips</a></li>
+    </ol>
+    <button class="btn btn-secondary btn-icon ml-auto btn-small"><span class="material-icons">settings_applications</span></button>
+  </nav> 
+    <div class="row">
+      <div class="col-md-6">
+        <div class="rg-card-simple equal-height">
+          <header>
+            <h5>Tooltip Position</h5>
+            <span>Subtitle of the card</span>
+          </header>
+          <section>
+            <p>Hover over the buttons below to see the four tooltips directions: top, right, bottom, and left.</p>
+            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top"> Top</button>
+            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Right</button>
+            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Bottom</button>
+            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Left</button>
+          </section>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="rg-card-simple equal-height">
+          <header>
+            <h5>Tooltip with HTML</h5>
+            <span>Subtitle of the card</span>
+          </header>
+          <section class="tab-content" id="pills-tabContent">
+            <P>Tooltip with custom custom inner HTML added</P>
+            <button type="button" class="btn btn-success" data-toggle="tooltip" data-html="true" title='<img src="images/logo.png">'>Tooltip with HTML</button>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="rg-card-simple equal-height">
+        <header>
+            <h5>Tooltip for disabled elements</h5>
+            <span>Subtitle of the card</span>
+        </header>
+        <section>
+            <p>Elements with the disabled attribute aren’t interactive, meaning users cannot focus, hover, or click them to trigger a tooltip (or popover). As a workaround, you’ll want to trigger the tooltip from a wrapper </p>
+            <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Disabled tooltip">
+                <button class="btn btn-primary" style="pointer-events: none;" type="button" disabled>Disabled button</button>
+            </span>
+        </section>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="rg-card-simple equal-height">
+          <header>
+            <h5>Tooltip with Custom skins</h5>
+            <span>Subtitle of the card</span>
+          </header>
+          <section class="tab-content" id="pills-tabContent">
+            <P>Tooltip with custom skins: pass <span class="text-error">'primary'(skin color)</span> value to data-skin attribute</P>
+            <button type="button" class="btn btn-primary" data-skin="primary" data-toggle="tooltip" title="Tooltip with custom skin">Primary</button>
+            <button type="button" class="btn btn-danger" data-skin="error" data-toggle="tooltip" title="Tooltip with custom skin">Error</button>
+            <button type="button" class="btn btn-info" data-skin="info" data-toggle="tooltip" title="Tooltip with custom skin">Info</button>
+            <button type="button" class="btn btn-warning" data-skin="warning" data-toggle="tooltip" title="Tooltip with custom skin">Warning</button>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

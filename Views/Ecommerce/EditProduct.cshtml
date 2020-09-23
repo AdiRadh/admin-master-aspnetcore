@@ -1,0 +1,178 @@
+<div>
+    <nav class="rg-breadcrumb" aria-label="breadcrumb">
+        <h4 class="text-highlight-primary">Product Edit</h4>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item breadcrumb-item-first"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page"><a href="#">Ecommerce</a></li>
+          <li class="breadcrumb-item active" aria-current="page"><a href="#">Product Edit</a></li>
+        </ol>
+        <button class="btn btn-secondary btn-icon ml-auto btn-small"><span class="material-icons">settings_applications</span></button>
+      </nav>
+    <div>
+        <div class="rg-tabs">
+            <ul class="nav nav-tabs nav-fill rg-tabs-card primary" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link p-4 active" id="product-info-tab" data-toggle="tab" href="#product-info" role="tab" aria-controls="product-info" aria-selected="true">
+                        <span class="material-icons">shop</span>
+                        Product Info                                
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-4" id="features-tab" data-toggle="tab" href="#features" role="tab" aria-controls="features" aria-selected="false">
+                        <span class="material-icons">category</span>
+                        Features</a>
+                    </li>
+                <li class="nav-item">
+                    <a class="nav-link p-4" id="preview-tab" data-toggle="tab" href="#preview" role="tab" aria-controls="preview" aria-selected="false">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Preview</a>
+                    </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="product-info" role="tabpanel" aria-labelledby="product-info-tab">
+                    <div class="row justify-content-md-center">
+                        <div class="col-lg-8">
+                            <form>
+                                <div class="form-group row">
+                                    <label for="productPhoto" class="col-lg-3 col-form-label">Product photo</label>
+                                    <div class="col-lg-9 product-photo">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <img src="~/images/ecommerce/product-01-large.png" class="media-image full-width" alt="Product">
+                                            </div>
+                                            <div class="col-md-9">
+                                                <div class="form-group">
+                                                    <div class="custom-file">
+                                                        <input type="file" class="custom-file-input">
+                                                        <label class="custom-file-label" for="customFile">Choose file</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>                               
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="productName" class="col-lg-3 col-form-label">Product Name</label>
+                                    <div class="col-lg-9">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Enter product name" value="AKG Light,sterio bass" >
+                                        </div>
+                                    </div>        
+                                </div>
+                                <div class="form-group row">
+                                    <label for="productDescription" class="col-lg-3 col-form-label">Product Description</label>
+                                    <div class="col-lg-9">
+                                        <div class="form-group">
+                                            <textarea class="form-control" placeholder="Enter product description">Sterio sound, Slick and slim light weight on ear head phones</textarea>
+                                        </div>
+                                    </div>        
+                                </div>
+                                <div class="form-group row">
+                                    <label for="productPrice" class="col-lg-3 col-form-label">Product Price</label>
+                                    <div class="col-lg-9">
+                                        <div class="form-group">
+                                            <input type="number" class="form-control" placeholder="Enter product price" value="100">
+                                        </div>
+                                    </div>        
+                                </div>
+                                <div class="form-group row">
+                                    <label for="productManufacturing" class="col-lg-3 col-form-label">Manufacturing Date</label>
+                                    <div class="col-lg-9">
+                                        <div class="form-group">
+                                            <input type="date" class="form-control" value="2020-12-12" />
+                                        </div>
+                                    </div>        
+                                </div>
+                                <div class="form-group row">
+                                    <label for="productExpiry" class="col-lg-3 col-form-label">Expire Date</label>
+                                    <div class="col-lg-9">
+                                        <div class="form-group">
+                                            <input type="date" class="form-control" value="2020-12-31"/>
+                                        </div>
+                                    </div>        
+                                </div>
+
+                                <div class="offset-lg-3 col-lg-9">
+                                    <button class="btn btn-info btn-icon-text"><span class="text">Next</span><span class="material-icons">arrow_forward</span></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="features" role="tabpanel" aria-labelledby="features-tab">
+                    <div class="row justify-content-md-center">
+                        <div class="col-lg-8">
+                            <form>
+                                <div class="form-group row">
+                                    <label for="productCategory" class="col-lg-3 col-form-label">Product Category</label>
+                                    <div class="col-lg-9">
+                                        <div class="form-group">
+                                            <select class="form-control">
+                                                <option>Category1</option>
+                                                <option>Category2</option>
+                                                <option>Category3</option>
+                                            </select>
+                                        </div>
+                                    </div>        
+                                </div>
+                                <div class="form-group row">
+                                    <label for="feature1" class="col-lg-3 col-form-label">Feature 1</label>
+                                    <div class="col-lg-9">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" value="Feature1"/>
+                                        </div>
+                                    </div>        
+                                </div>
+                                <div class="form-group row">
+                                    <label for="feature2" class="col-lg-3 col-form-label">Feature 2</label>
+                                    <div class="col-lg-9">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" value="Feature2"/>
+                                        </div>
+                                    </div>        
+                                </div>
+                                <div class="form-group row">
+                                    <label for="feature3" class="col-lg-3 col-form-label">Feature 3</label>
+                                    <div class="col-lg-9">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" value="Feature3"/>
+                                        </div>
+                                    </div>        
+                                </div>
+                                <div class="offset-lg-3 col-lg-9">
+                                    <button class="btn btn-secondary btn-icon-text"><span class="material-icons">arrow_back</span><span class="text">previous</span></button>
+                                    <button class="btn btn-info btn-icon-text"><span class="text">Next</span><span class="material-icons">arrow_forward</span></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="preview" role="tabpanel" aria-labelledby="preview-tab">
+                    <div class="row justify-content-md-center">
+                        <div class="col-lg-8">
+                    <div>
+                        <h6>Product details</h6>
+                        <p class="mb-0">AKG Light,sterio bass</p>
+                        <p class="mb-0">Sterio sound, Slick and slim light weight on ear head phones</p>
+                        <p class="mb-0">Manufacturing Date: 12/12/2020</p>
+                    </div>
+                    <hr/>
+                    <div>
+                        <h6>Features</h6>
+                        <p class="mb-1">Feature1</p>
+                        <p class="mb-1">Feature 2</p>
+                        <p class="mb-1">Feature3</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <button class="btn btn-secondary btn-icon-text"><span class="material-icons">arrow_back</span><span class="text">previous</span></button>
+                        <button class="btn btn-info">Finish</button>
+                    </div>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

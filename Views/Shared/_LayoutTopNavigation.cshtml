@@ -1,0 +1,411 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">    
+    <meta name="robots">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="generator" content="">
+    <title>Rini - Admin template</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="~/vendors/css/all.css" rel="stylesheet"/>
+        <link href="~/vendors/css/material.css" rel="stylesheet"/>
+        <link href="~/vendors/css/reset.css" rel="stylesheet"/>
+        <!-- keep either rlt or ltr bootstrap css... DON"T Include both even with comment -->
+        <link href="~/vendors/css/bootstrap.min.css" rel="stylesheet"/>
+        
+        <link href="~/vendors/css/perfect-scrollbar.css" rel="stylesheet"/>
+        <link href="~/vendors/css/jquery.dataTables.min.css" rel="stylesheet"/>
+    
+        <link href="~/vendors/css/responsive.dataTables.min.css" rel="stylesheet"/>        
+        <link href="~/vendors/js/fullcalendar/core/main.css" rel='stylesheet' />
+        <link href="~/vendors/js/fullcalendar/daygrid/main.css" rel='stylesheet' />
+        <link href="~/vendors/js/fullcalendar/timegrid/main.css" rel='stylesheet' />
+    
+        <link href="~/vendors/js/fullcalendar/list/main.css" rel='stylesheet' />
+        <link href="~/vendors/css/jquery.slider.min.css" rel="stylesheet"/>
+
+
+
+        <link href="~/css/app.css" rel="stylesheet"/>
+    
+        <!-- Vendor Js -->
+        <script src="~/vendors/js/jquery-3.4.1.min.js"></script>
+        <script src="~/vendors/js/popper.min.js"></script>
+        <script src="~/vendors/js/bootstrap.min.js"></script>
+        <script src="~/vendors/js/Chart.bundle.min.js"></script>
+
+        <script src="~/vendors/js/perfect-scrollbar.min.js"></script>
+        <script src="~/vendors/js/Chart.min.js"></script>
+        <script src="~/vendors/js/d3.min.js"></script>
+        <script src="~/vendors/js/topojson.min.js"></script>
+        <script src="~/vendors/js/datamaps.world.js"></script>
+
+        <script src="~/vendors/js/jquery.dataTables.min.js"></script>
+        <script src="~/vendors/js/dataTables.responsive.min.js"></script>
+
+        <!-- amChart -->
+        <script src="~/vendors/js/amChart/core.js"></script>
+        <script src="~/vendors/js/amChart/charts.js"></script>
+        <script src="~/vendors/js/amChart/animated.js"></script>
+
+        <script src="~/vendors/js/slider/jquery.slider.min.js"></script>
+        <!--Fullcalendar-->
+        <script src="~/vendors/js/fullcalendar/core/main.js"></script>
+        <script src="~/vendors/js/fullcalendar/interaction/main.js"></script>
+        <script src="~/vendors/js/fullcalendar/daygrid/main.js"></script>
+        <script src="~/vendors/js/fullcalendar/timegrid/main.js"></script>
+        <script src="~/vendors/js/fullcalendar/list/main.js"></script>
+
+        <!--rg scripts-->
+        <script src="~/js/chart-data.js"></script>
+        <script src="~/js/render-chart.js"></script>
+        <script src="~/js/fullscreen.js"></script>
+        <script src="~/js/rg-wizard.js"></script>
+        <script src="~/js/rg-accordion.js"></script>
+        <script src="~/js/rg-data-table.js"></script>
+        <script src="~/js/rg-tooltip.js"></script>
+        <script src="~/js/rg-layout-top-navigation.js"></script>
+        <script src="~/js/rg-page-loader.js"></script>
+        
+
+
+</head>
+
+<body>
+
+    <main>
+        <header>
+            <div class="brand-bar align-items-center">
+                <nav class="navbar navbar-expand-lg">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon material-icons text-secondary">format_align_right</span>
+                    </button>
+                    <a class="navbar-brand-expand" href="javascript:void(0);"><span class="logo"><img src="~/images/logo.png" alt="user"></span></a>
+                    <a class="navbar-brand-collapse" href="javascript:void(0);"><span class="logo"><img src="~/images/logo-collapse.png" alt="user"></span></a>
+                </nav>
+                <nav class="notification-bar d-none d-sm-inline-block ml-auto">
+                    <div class="notification-item-list my-sm-0">
+                        <div class="notification-item dropdown">
+                            <span class="material-icons dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">search</span>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-sarch" aria-labelledby="dropdownMenuButton">
+                                <form>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                                        <span class="material-icons">search</span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="notification-item dropdown">
+                            <span class="material-icons dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">add_alert</span>
+                            <div class="dropdown-menu dropdown-menu-right notification-dropdown dropdown-menu-action dropdown-menu-highlight-header heightlight-warning" aria-labelledby="dropdownMenuButton">
+                                <header>
+                                    <h5>User Notifications</h5>
+                                </header>
+                                <section>
+                                    <div class="rg-notification-list">
+                                        <div class="rg-notification-list-item">
+                                            <div class="notification-icon"><span class="material-icons error">photo</span></div>
+                                            <div class="notification-details">
+                                                <p>New Order has been placed</p>
+                                                <span>3 hours ago</span>
+                                            </div>
+                                            <div class="notification-action material-icons">keyboard_arrow_right</div>
+                                        </div>
+                                        <div class="rg-notification-list-item">
+                                            <div class="notification-icon"><span class="material-icons warning">settings</span></div>
+                                            <div class="notification-details">
+                                                <p>Mark has updated the sales settings</p>
+                                                <span>3 hours ago</span>
+                                            </div>
+                                            <div class="notification-action material-icons">keyboard_arrow_right</div>
+                                        </div>
+
+                                        <div class="rg-notification-list-item">
+                                            <div class="notification-icon"><span class="material-icons info">inbox</span></div>
+                                            <div class="notification-details">
+                                                <p>Sandbox has new updates</p>
+                                                <span>3 hours ago</span>
+                                            </div>
+                                            <div class="notification-action material-icons">keyboard_arrow_right</div>
+                                        </div>
+
+
+                                        <div class="rg-notification-list-item">
+                                            <div class="notification-icon"><span class="material-icons success">perm_contact_calendar</span></div>
+                                            <div class="notification-details">
+                                                <p>User engagement programm event has started</p>
+                                                <span>3 hours ago</span>
+                                            </div>
+                                            <div class="notification-action material-icons">keyboard_arrow_right</div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="notification-item">
+                            <span class="material-icons dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">settings</span>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                <header>
+                                    <h5>User Settings</h5>
+                                </header>
+                                <section>
+                                    <a class="dropdown-item" href="javascript:void(0);"> <i class="material-icons info">account_circle</i>
+                                        <span>Profile</span></a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="javascript:void(0);"> <i class="material-icons success">receipt</i>
+                                        <span>Billing</span></a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="javascript:void(0);"> <i class="material-icons warning">build </i>
+                                        <span>Settings</span></a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="javascript:void(0);"> <i class="material-icons error">power_settings_new</i> <span>Log Out</span></a>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="notification-item">
+                            <span class="material-icons dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">message</span>
+                            <div class="dropdown-menu dropdown-menu-right message-dropdown" aria-labelledby="dropdownMenuButton">
+                                <header>
+                                    <h5>Messages</h5>
+                                </header>
+                                <section>
+                                    <div class="rg-message-list">
+                                        <div class="rg-message-list-item">
+                                            <div class="user-pic">
+                                                <img src="~/images/users/user-01-large.jpg" class="media-image rounded-corner extra-small"  alt="User">
+                                            </div>
+                                            <div class="message-details">
+                                                <p>John Doe</p>
+                                                <span>Let us connect over zoom to discuss the priorities</span>
+                                            </div>
+                                        </div>
+                                        <div class="rg-message-list-item">
+                                            <div class="user-pic">
+                                                <img src="~/images/users/user-02-large.jpg" class="media-image rounded-corner extra-small" alt="User">
+                                            </div>
+                                            <div class="message-details">
+                                                <p>Mark Shaw</p>
+                                                <span>Designs has been sent to the developers</span>
+                                            </div>
+                                        </div>
+                                        <div class="rg-message-list-item">
+                                            <div class="user-pic">
+                                                <img src="~/images/users/user-03-large.jpg" class="media-image rounded-corner extra-small" alt="User">
+                                            </div>
+                                            <div class="message-details">
+                                                <p>Anna Strong</p>
+                                                <span>Order has been delivered to the warehous</span>
+                                            </div>
+                                        </div>
+                                        <div class="rg-message-list-item">
+                                            <div class="user-pic">
+                                                <img src="~/images/users/user-04-large.jpg" class="media-image rounded-corner extra-small" alt="User">
+                                            </div>
+                                            <div class="message-details">
+                                                <p>Michael Perk</p>
+                                                <span>Need updated sales report by end of week</span>
+                                            </div>
+                                        </div>
+                                        <div class="rg-message-list-item">
+                                            <div class="user-pic">
+                                                <img src="~/images/users/user-05-large.jpg" class="media-image rounded-corner extra-small" alt="User">
+                                            </div>
+                                            <div class="message-details">
+                                                <p>Lita</p>
+                                                <span>Please postpone scheduled deliverables</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="notification-item"><span class="material-icons full-screen" onclick="fullscreen()">crop_free</span></div>
+                    </div>
+                </nav>
+                <div class="user-info">
+                    <span class="greetings">Hello</span>
+                    <span class="user-name">Admin</span>
+                    <img src="~/images/users/user-06-large.jpg" class="media-image rounded-corner small ml-2" alt="user">
+                </div>
+                <div class="notification-toggle d-inline-block d-sm-none mr-2">
+                    <span class="material-icons text-secondary">more_vert</span>
+                </div>
+            </div>
+            <div class="main-navigation">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                      <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <a class="nav-link" href="@Url.Action("Dashboard", "Home")">
+                            <i class="material-icons">dashboard</i>
+                            <span>Dashboard</span>
+                          </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="material-icons">layers</i>
+                            <span>Applications</span>
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li class="dropdown-submenu">
+                              <a class="dropdown-item dropdown-toggle" href="javascript:void(0);">
+                                  <i class="material-icons">shopping_cart</i>
+                                  <span>Ecommerce</span>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="@Url.Action("ProductList", "Ecommerce")">
+                                    <i class="material-icons text-small">trip_origin</i>
+                                    <span>Product list</span>
+                                </a></li>
+                                <li><a class="dropdown-item" href="@Url.Action("ProductDetails", "Ecommerce")">
+                                    <i class="material-icons text-small">trip_origin</i>
+                                    <span>Product Details</span>
+                                </a></li>
+                                <li><a class="dropdown-item" href="@Url.Action("Checkout", "Ecommerce")">
+                                    <i class="material-icons text-small">trip_origin</i>
+                                    <span>Checkout</span>
+                                </a></li>
+                                <li><a class="dropdown-item" href="@Url.Action("Wishlist", "Ecommerce")">
+                                    <i class="material-icons text-small">trip_origin</i>
+                                    <span>Wishlist</span>
+                                </a></li>
+                                <li><a class="dropdown-item" href="@Url.Action("CreateProduct", "Ecommerce")">
+                                    <i class="material-icons text-small">trip_origin</i>
+                                    <span>Create Product</span>
+                                </a></li>
+                                <li><a class="dropdown-item" href="@Url.Action("EditProduct", "Ecommerce")">
+                                    <i class="material-icons text-small">trip_origin</i>
+                                    <span>Edit Product</span>
+                                </a></li>
+                              </ul>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="@Url.Action("Index", "Email")">
+                                    <i class="material-icons">email</i>
+                                    <span>Email</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="@Url.Action("Index", "Chat")">
+                                    <i class="material-icons">chat</i>
+                                    <span>Chat</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="@Url.Action("Index", "Calendar")">
+                                    <i class="material-icons">calendar_today</i>
+                                    <span>Calendar</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="@Url.Action("Index", "Kanban")">
+                                    <i class="material-icons">dashboard</i>
+                                    <span>Kanban</span>
+                                </a>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="javascript:void(0);">
+                                    <i class="material-icons">perm_identity</i>
+                                    <span>Users</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="@Url.Action("DefaultList", "User")">
+                                      <i class="material-icons text-small">trip_origin</i>
+                                        <span>User Default List</span>
+                                    </a></li>
+                                  <li><a class="dropdown-item" href="@Url.Action("DataTableList", "User")">
+                                      <i class="material-icons text-small">trip_origin</i>
+                                        <span>User Data table List</span>
+                                    </a></li>
+                                  <li><a class="dropdown-item" href="@Url.Action("UserCard", "User")">
+                                      <i class="material-icons text-small">trip_origin</i>
+                                        <span>User Card</span>
+                                    </a></li>
+                                  <li><a class="dropdown-item" href="@Url.Action("Create", "User")">
+                                      <i class="material-icons text-small">trip_origin</i>
+                                        <span>Create User</span>
+                                    </a></li>
+                                  <li><a class="dropdown-item" href="@Url.Action("Edit", "User")">
+                                      <i class="material-icons text-small">trip_origin</i>
+                                        <span>Edit User</span>
+                                    </a></li>
+                                </ul>
+                              </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="material-icons">insert_drive_file</i>
+                              <span>Pages</span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li>
+                                    <a class="dropdown-item" href="@Url.Action("Login", "Authentication")">
+                                        <i class="material-icons text-small">trip_origin</i>
+                                        <span>Login</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="@Url.Action("Signup", "Authentication")">
+                                        <i class="material-icons text-small">trip_origin</i>
+                                        <span>Signup</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="@Url.Action("ForgotPassword", "Authentication")">
+                                        <i class="material-icons text-small">trip_origin</i>
+                                        <span>Forgot password</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="@Url.Action("ResetPassword", "Authentication")">
+                                        <i class="material-icons text-small">trip_origin</i>
+                                        <span>Reset password</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="@Url.Action("Profile", "User")">
+                                        <i class="material-icons text-small">trip_origin</i>
+                                        <span>Profile</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="@Url.Action("NotFound", "Error")">
+                                        <i class="material-icons text-small">trip_origin</i>
+                                        <span>404</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="@Url.Action("InternalServer", "Error")">
+                                        <i class="material-icons text-small">trip_origin</i>
+                                        <span>500</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="@Url.Action("FAQ", "Help")">
+                                        <i class="material-icons text-small">trip_origin</i>
+                                        <span>FAQ</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+                
+            </div>
+            
+        </header>
+        <section>
+            <section>
+                @RenderBody()
+            </section>
+        </section>
+    </main>
+    
+</body></html>

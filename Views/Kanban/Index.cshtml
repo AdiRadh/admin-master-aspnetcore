@@ -1,0 +1,357 @@
+
+<nav class="rg-breadcrumb" aria-label="breadcrumb">
+  <h4 class="text-primary">Kanban</h4>
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item breadcrumb-item-first"><a href="#">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page"><a href="#">Kanban</a></li>
+  </ol>
+  <button class="btn btn-secondary btn-icon ml-auto"><span class="material-icons">settings_applications</span></button>
+</nav>
+
+<div class="kanban">
+    <div class="rg-card-action bucket">
+        <header>
+            <div class="heading">
+                <h4 class=" text-secondary text-weight-600"><span class="material-icons">adjust</span>Epics</h4>
+            </div>
+            <div class="inline-actions">
+              <span class="material-icons link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">more_horiz</span>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Edit</a>
+                <a class="dropdown-item" href="#">Delete</a>
+              </div>
+            </div>
+          </header>
+          <section ondrop="drop(event)" ondragover="allowDrop(event)" class="kanban-container">
+            <div class="rg-card-action card" id="card1"  draggable="true" ondragstart="drag(event)">
+                <header>
+                    <div class="heading">
+                        <div class="tag-colors">
+                          <span class="error"></span>
+                          <span class="info"></span>
+                        </div>
+                        <h6>Stage 1-Plan</h6>
+                    </div>
+                    <div class="inline-actions">
+                        <span class="material-icons link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">edit</span>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Edit</a>
+                          <a class="dropdown-item" href="#">Delete</a>
+                        </div>
+                    </div>
+                </header>
+                <section>
+                  <div>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ...
+                  </div>
+                  <div class="row due-date-container">
+                    <div class="col-lg-6 attachment-comment-count"> 
+                      <span><span class="material-icons">attach_file</span>14</span>
+                      <span><span class="material-icons">comment</span>25</span>
+                    </div>
+                    <div class="col-lg-6 text-right due-date"> 
+                      <span><span class="material-icons">access_time</span>Feb 7, 2020</span>
+                    </div>                     
+                  </div>
+                  <div class="assignees text-right">
+                    <button class="btn tone-solid btn-elevated add-assignees"><span class="material-icons">add</span></button>
+                    <button class="btn btn-primary tone-solid btn-elevated">R</button>
+                    <button class="btn btn-success tone-solid btn-elevated">N</button>
+                  </div>
+
+                </section>
+            </div>
+            <div class="rg-card-action card" id="card2"  draggable="true" ondragstart="drag(event)">
+              <img src="../images/blog/blog-01-large.jpg" class="media-blog-image rounded-corner full-width"/>
+                <header>                  
+                    <div class="heading">
+                        <div class="tag-colors">
+                          <span class="warning"></span>
+                          <span class="light"></span>
+                        </div>
+                        <h6>Stage 1-Plan</h6>
+                    </div>
+                    <div class="inline-actions">
+                        <span class="material-icons link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">edit</span>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Edit</a>
+                          <a class="dropdown-item" href="#">Delete</a>
+                        </div>
+                    </div>
+                </header>                <section>
+                  <div class="row due-date-container">
+                    <div class="col-lg-6 attachment-comment-count"> 
+                      <span><span class="material-icons">attach_file</span>14</span>
+                      <span><span class="material-icons">comment</span>25</span>
+                    </div>
+                    <div class="col-lg-6 text-right due-date"> 
+                      <span><span class="material-icons">access_time</span>Feb 7, 2020</span>
+                    </div>                     
+                  </div>
+                  <div class="assignees text-right">
+                    <button class="btn tone-solid btn-elevated add-assignees"><span class="material-icons">add</span></button>
+                    <button class="btn btn-primary tone-solid btn-elevated">R</button>
+                    <button class="btn btn-success tone-solid btn-elevated">N</button>
+                  </div>
+
+                </section>
+            </div>
+            <div class="rg-card-action card" id="card3"  draggable="true" ondragstart="drag(event)">
+                <header>
+                    <div class="heading">
+                        <div class="tag-colors">
+                          <span class="primary"></span>
+                          <span class="secondary"></span>
+                        </div>
+                        <h6>Stage 1-Plan</h6>
+                    </div>
+                    <div class="inline-actions">
+                        <span class="material-icons link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">edit</span>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Edit</a>
+                          <a class="dropdown-item" href="#">Delete</a>
+                        </div>
+                    </div>
+                </header>
+                <section>
+                  <div class="row due-date-container">
+                    <div class="col-lg-6 attachment-comment-count"> 
+                      <span><span class="material-icons">attach_file</span>14</span>
+                    </div>
+                    <div class="col-lg-6 text-right due-date"> 
+                      <span><span class="material-icons">access_time</span>Feb 7, 2020</span>
+                    </div>                     
+                  </div>
+                  <div class="assignees text-right">
+                    <button class="btn tone-solid btn-elevated add-assignees"><span class="material-icons">add</span></button>
+                    <button class="btn btn-primary tone-solid btn-elevated">R</button>
+                    <button class="btn btn-success tone-solid btn-elevated">N</button>
+                  </div>
+
+                </section>
+            </div>             
+          </section>
+    </div>
+    <div class="rg-card-action bucket">
+        <header>
+            <div class="heading">
+              <h4 class=" text-secondary text-weight-600"><span class="material-icons success">adjust</span>Ice Bucket</h4>
+            </div>
+            <div class="inline-actions">
+              <span class="material-icons link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">more_horiz</span>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Edit</a>
+                <a class="dropdown-item" href="#">Delete</a>
+              </div>
+            </div>
+        </header>
+        <section ondrop="drop(event)" ondragover="allowDrop(event)" class="kanban-container">
+          
+          <div class="rg-card-action card" id="card-image"  draggable="true" ondragstart="drag(event)">
+            <img src="../images/blog/blog-02-large.jpg" class="media-blog-image rounded-corner full-width"/>
+            <header>              
+                <div class="heading">
+                    <div class="tag-colors">
+                      <span class="light"></span>
+                      <span class="success"></span>
+                    </div>
+                    <h6>Stage 1-Plan</h6>
+                </div>
+                <div class="inline-actions">
+                    <span class="material-icons link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">edit</span>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Edit</a>
+                      <a class="dropdown-item" href="#">Delete</a>
+                    </div>
+                </div>
+            </header>
+            <section>
+              <div class="row due-date-container">
+                <div class="col-lg-6 attachment-comment-count"> 
+                  <span><span class="material-icons">attach_file</span>14</span>
+                  <span><span class="material-icons">comment</span>25</span>
+                </div>
+                <div class="col-lg-6 text-right due-date"> 
+                  <span><span class="material-icons">access_time</span>Feb 7, 2020</span>
+                </div>                     
+              </div>
+              <div class="assignees text-right">
+                <button class="btn tone-solid btn-elevated add-assignees"><span class="material-icons">add</span></button>
+                <button class="btn btn-primary tone-solid btn-elevated">R</button>
+                <button class="btn btn-success tone-solid btn-elevated">N</button>
+              </div>
+
+            </section>
+        </div>
+
+          <div class="rg-card-action card" id="card4"  draggable="true" ondragstart="drag(event)">
+            <header>
+                <div class="heading">
+                    <div class="tag-colors">
+                      <span class="info"></span>
+                    </div>
+                    <h6>Stage 1-Plan</h6>
+                </div>
+                <div class="inline-actions">
+                    <span class="material-icons link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">edit</span>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Edit</a>
+                      <a class="dropdown-item" href="#">Delete</a>
+                    </div>
+                </div>
+            </header>
+            <section>
+              <div class="assignees text-right">
+                <button class="btn tone-solid btn-elevated add-assignees"><span class="material-icons">add</span></button>
+              </div>
+            </section>
+        </div>
+        <div class="rg-card-action card" id="card5"  draggable="true" ondragstart="drag(event)">
+          <header>
+              <div class="heading">
+                  <div class="tag-colors">
+                    <span class="success"></span>
+                  </div>
+                  <h6>Stage 1-Plan</h6>
+              </div>
+              <div class="inline-actions">
+                  <span class="material-icons link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">edit</span>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Edit</a>
+                    <a class="dropdown-item" href="#">Delete</a>
+                  </div>
+              </div>
+          </header>
+          <section>
+            <div class="assignees text-right">
+              <button class="btn tone-solid btn-elevated add-assignees"><span class="material-icons">add</span></button>
+            </div>
+          </section>
+      </div>
+        </section>
+    </div>
+    <div class="rg-card-action bucket">
+        <header>
+            <div class="heading">
+              <h4 class=" text-secondary text-weight-600"><span class="material-icons info">adjust</span>Backlog</h4>
+            </div>
+            <div class="inline-actions">
+              <span class="material-icons link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">more_horiz</span>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Edit</a>
+                <a class="dropdown-item" href="#">Delete</a>
+              </div>
+            </div>
+        </header>
+        <section ondrop="drop(event)" ondragover="allowDrop(event)" class="kanban-container">
+          
+          <div class="rg-card-action card" id="card6"  draggable="true" ondragstart="drag(event)">
+            <header>
+                <div class="heading">
+                    <div class="tag-colors">
+                      <span class="error"></span>
+                    </div>
+                    <h6>Stage 1-Plan</h6>
+                </div>
+                <div class="inline-actions">
+                    <span class="material-icons link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">edit</span>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Edit</a>
+                      <a class="dropdown-item" href="#">Delete</a>
+                    </div>
+                </div>
+            </header>
+            <section>
+              <div class="assignees text-right">
+                <button class="btn tone-solid btn-elevated add-assignees"><span class="material-icons">add</span></button>
+              </div>
+            </section>
+        </div>
+        <div class="rg-card-action card" id="card7"  draggable="true" ondragstart="drag(event)">
+          <img src="../images/blog/blog-03-large.jpg" class="media-blog-image rounded-corner full-width"/>
+          <header>            
+              <div class="heading">
+                  <div class="tag-colors">
+                    <span class="dark"></span>
+                  </div>
+                  <h6>Stage 1-Plan</h6>
+              </div>
+              <div class="inline-actions">
+                  <span class="material-icons link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">edit</span>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Edit</a>
+                    <a class="dropdown-item" href="#">Delete</a>
+                  </div>
+              </div>
+          </header>          <section>
+            <div class="assignees text-right">
+              <button class="btn tone-solid btn-elevated add-assignees"><span class="material-icons">add</span></button>
+            </div>
+          </section>
+      </div>
+        </section>
+    </div>
+    <div class="rg-card-action bucket">
+        <header>
+            <div class="heading">
+              <h4 class=" text-secondary text-weight-600"><span class="material-icons">adjust</span>Active Sprint</h4>
+            </div>
+            <div class="inline-actions">
+              <span class="material-icons link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">more_horiz</span>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Edit</a>
+                <a class="dropdown-item" href="#">Delete</a>
+              </div>
+            </div>
+        </header>
+        <section ondrop="drop(event)" ondragover="allowDrop(event)" class="kanban-container">
+          
+          <div class="rg-card-action card" id="card9"  draggable="true" ondragstart="drag(event)">
+            <header>
+                <div class="heading">
+                    <div class="tag-colors">
+                      <span class="success"></span>
+                    </div>
+                    <h6>Stage 1-Plan</h6>
+                </div>
+                <div class="inline-actions">
+                    <span class="material-icons link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">edit</span>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Edit</a>
+                      <a class="dropdown-item" href="#">Delete</a>
+                    </div>
+                </div>
+            </header>
+            <section>
+              <div class="assignees text-right">
+                <button class="btn tone-solid btn-elevated add-assignees"><span class="material-icons">add</span></button>
+              </div>
+            </section>
+        </div>
+        <div class="rg-card-action card" id="card9"  draggable="true" ondragstart="drag(event)">
+          <header>
+              <div class="heading">
+                  <div class="tag-colors">
+                    <span class="primary"></span>
+                  </div>
+                  <h6>Stage 1-Plan</h6>
+              </div>
+              <div class="inline-actions">
+                  <span class="material-icons link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">edit</span>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Edit</a>
+                    <a class="dropdown-item" href="#">Delete</a>
+                  </div>
+              </div>
+          </header>
+        <section>
+            <div class="assignees text-right">
+              <button class="btn tone-solid btn-elevated add-assignees"><span class="material-icons">add</span></button>
+            </div>
+          </section>
+      </div>
+        </section>
+    </div>
+</div>
+
+<script src="~/js/rg-kanban.js"></script>

@@ -1,0 +1,330 @@
+<div>
+    <nav class="rg-breadcrumb" aria-label="breadcrumb">
+        <h4 class="text-primary">Form Validation</h4>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item breadcrumb-item-first"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page"><a href="#">Form</a></li>
+          <li class="breadcrumb-item active" aria-current="page"><a href="#">Form validation</a></li>
+        </ol>
+        <button class="btn btn-secondary btn-icon ml-auto btn-small"><span class="material-icons">settings_applications</span></button>
+      </nav> 
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="rg-card-simple equal-height">
+                <header>
+                    <h5>Inline client side validation</h5>
+                </header>
+                <section>
+                    <form class="was-validated">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email" value="test@gmail.com" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Password</label>
+                            <input type="password" class="form-control" placeholder="Password" required>
+                            <div class="invalid-feedback">
+                                Please enter value in the input field.
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Single select</label>
+                            <select class="form-control" required>
+                                <option value="">Select</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select input.
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect2">Multi select</label>
+                            <select multiple class="form-control" required>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select input.
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Text area</label>
+                            <textarea class="form-control" rows="2" placeholder="Text area" required></textarea>
+                            <div class="invalid-feedback">
+                                Please enter value in the input field.
+                            </div>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary" type="submit">Submit</button>
+                            <button class="btn btn-secondary" type="submit">Cancel</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="rg-card-simple equal-height">
+                <header>
+                    <h5>Stacked validation messages</h5>
+                </header>
+                <section>
+                    <form class="was-validated">
+                        <div class="alert rg-alert alert-info" role="alert">
+                            A simple info alert—check it out!
+                        </div>
+                        <div class="alert rg-alert alert-success" role="alert">
+                            A simple success alert—check it out!
+                        </div>
+                        <div class="alert rg-alert alert-danger" role="alert">
+                            A simple danger alert—check it out!
+                        </div>
+                        <div class="alert rg-alert alert-warning" role="alert">
+                            A simple warning alert—check it out!
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                    <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+                                </div>
+                                <div class="form-group custom-control custom-radio">
+                                    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
+                                </div>
+                                <div class="form-group custom-control custom-radio">
+                                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadio2">Or toggle this other custom radio</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                    <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
+                                </div>
+                                <div class="form-group custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" disabled>
+                                    <label class="custom-control-label" for="customSwitch2">Disabled switch element</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-12">
+                                <label for="customRange1">Custom slider slim</label>
+                                <input type="range" class="custom-range" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput">Select Menu</label>
+                                    <select class="custom-select" required>
+                                        <option value="">Select</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput">File Browser</label>
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" required>
+                                        <label class="custom-file-label" for="customFile">Choose file</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="rg-card-simple">
+                <header>
+                    <h5>Horizontal form Layout with client side validation</h5>
+                </header>
+                <section>
+                    <form class="was-validated">
+                        <div class="form-group row">
+                            <label for="staticEmail" class="col-lg-2 col-form-label">Email</label>
+                            <div class="col-lg-10">
+                                <div class="row">
+                                    <input type="email" class="col-lg-6 form-control" placeholder="Enter email" value="test@gmail.com" required>
+                                    <label for="staticEmail" class="col-lg-6 col-form-label valid-feedback">Looks good!</label>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                            <div class="col-lg-10">
+                                <div class="row">
+                                    <input type="password" class="col-lg-6 form-control" placeholder="Password" required>
+                                    <label for="staticEmail" class="col-lg-6 col-form-label invalid-feedback">Please enter password</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-2 col-form-label">Single select</label>
+                            <div class="col-lg-10">
+                                <div class="row">
+                                    <select class=" col-lg-6 form-control" required>
+                                        <option value="">Select</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                    <label for="staticEmail" class="col-lg-6 col-form-label invalid-feedback">Please select value</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-2 col-form-label">Multi select</label>
+                            <div class="col-lg-10">
+                                <div class="row">
+                                    <select multiple class="col-lg-6 form-control" required>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                    <label for="staticEmail" class="col-lg-6 col-form-label invalid-feedback">Please select value</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-2 col-form-label">Textarea</label>
+                            <div class="col-lg-10">
+                                <div class="row">
+                                    <textarea type="email" class="col-lg-6 form-control" placeholder="Textarea" value="test@gmail.com" required></textarea>
+                                    <label for="staticEmail" class="col-lg-6 col-form-label invalid-feedback">Please enter value</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-2 col-form-label">Communication</label>
+                            <div class="col-lg-10">
+                                <div class="row">
+                                    <div class="col-lg-12 custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="defaultCheck2">
+                                        <label class="custom-control-label" for="defaultCheck2">Check this custom checkbox</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="offset-lg-2">
+                            <button class="btn btn-primary" type="submit">Submit</button>
+                            <button class="btn btn-secondary" type="submit">Cancel</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="rg-card-simple">
+                <header>
+                    <h5>Server side validation</h5>
+                </header>
+                <section>
+                    <form>
+                        <div class="form-group row">
+                            <label for="staticEmail" class="col-lg-2 col-form-label">Email</label>
+                            <div class="col-lg-10">
+                                <div class="row">
+                                    <input type="email" class="col-lg-6 form-control is-valid" placeholder="Enter email" />
+                                    <label for="staticEmail" class="col-lg-6 col-form-label valid-feedback">Looks good!</label>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                            <div class="col-lg-10">
+                                <div class="row">
+                                    <input type="password" class="col-lg-6 form-control is-invalid" placeholder="Password">
+                                    <label for="staticEmail" class="col-lg-6 col-form-label invalid-feedback">Please enter password</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-2 col-form-label">Single select</label>
+                            <div class="col-lg-10">
+                                <div class="row">
+                                    <select class=" col-lg-6 form-control is-invalid">
+                                        <option value="">Select</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                    <label for="staticEmail" class="col-lg-6 col-form-label invalid-feedback">Please select value</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-2 col-form-label">Multi select</label>
+                            <div class="col-lg-10">
+                                <div class="row">
+                                    <select multiple class="col-lg-6 form-control is-invalid">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                    <label for="staticEmail" class="col-lg-6 col-form-label invalid-feedback">Please select value</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-2 col-form-label">Textarea</label>
+                            <div class="col-lg-10">
+                                <div class="row">
+                                    <textarea type="email" class="col-lg-6 form-control is-invalid" placeholder="Textarea" value="test@gmail.com"></textarea>
+                                    <label for="staticEmail" class="col-lg-6 col-form-label invalid-feedback">Please enter value</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-2 col-form-label">Communication</label>
+                            <div class="col-lg-10">
+                                <div class="row">
+                                    <div class="col-lg-12 custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="defaultCheck3">
+                                        <label class="custom-control-label" for="defaultCheck3">Check this custom checkbox</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="offset-lg-2">
+                            <button class="btn btn-primary" type="submit">Submit</button>
+                            <button class="btn btn-secondary" type="submit">Cancel</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>

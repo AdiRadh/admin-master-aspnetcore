@@ -1,0 +1,252 @@
+
+                <div>
+    <nav class="rg-breadcrumb" aria-label="breadcrumb">
+        <h4 class="text-highlight-primary">Edit User</h4>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item breadcrumb-item-first"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page"><a href="#">User</a></li>
+          <li class="breadcrumb-item active" aria-current="page"><a href="#">Edit user</a></li>
+        </ol>
+        <button class="btn btn-secondary btn-icon ml-auto btn-small"><span class="material-icons">settings_applications</span></button>
+      </nav>
+      <div class="rg-tabs">
+        <ul class="nav nav-tabs nav-fill rg-tabs-card primary" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link p-4 active" id="personal-info-tab" data-toggle="tab" href="#personal-info" role="tab" aria-controls="personal-info" aria-selected="true">
+                    <span class="material-icons">person</span>
+                    Personal Info                                
+                </a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link p-4" id="account-info-tab" data-toggle="tab" href="#account-info" role="tab" aria-controls="account-info-tab" aria-selected="false">
+                <i class="fas fa-address-card"></i>
+                Account Info</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link p-4" id="address-tab" data-toggle="tab" href="#address" role="tab" aria-controls="address" aria-selected="false">
+                <i class="fas fa-map-marker-alt"></i>
+                Postal Info</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link p-4" id="preview-tab" data-toggle="tab" href="#preview" role="tab" aria-controls="preview" aria-selected="false">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Preview</a>
+                </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="personal-info" role="tabpanel" aria-labelledby="personal-info-tab">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-8">
+                        <form>
+                            <div class="form-group row">
+                                <label for="profilePhoto" class="col-lg-3 col-form-label">Profile photo</label>
+                                <div class="col-lg-9 profile-photo">
+                                    <img src="../images/users/user-03-large.jpg"  class="media-image rounded-corner medium" alt="User"/>
+                                    <div class="form-group">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input">
+                                            <label class="custom-file-label" for="customFile">Choose file</label>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="firstName" class="col-lg-3 col-form-label">First Name</label>
+                                <div class="col-lg-9">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Enter first name" value="Sisly" >
+                                    </div>
+                                </div>        
+                            </div>
+                            <div class="form-group row">
+                                <label for="lastName" class="col-lg-3 col-form-label">Last Name</label>
+                                <div class="col-lg-9">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Enter last name" value="Fernadis">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="email" class="col-lg-3 col-form-label">Email</label>
+                                <div class="col-lg-9">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Enter email" value="Sisly@gmail.com">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="companyName" class="col-lg-3 col-form-label">Compnay Name</label>
+                                <div class="col-lg-9">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Enter company name" value="Technology Inc">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="companySite" class="col-lg-3 col-form-label">Compant Site</label>
+                                <div class="col-lg-9">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Enter company site" value="www.technology.com">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="contact" class="col-lg-3 col-form-label">Contact</label>
+                                <div class="col-lg-9">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Enter contact" value="1234567890">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="offset-lg-3 col-lg-9">
+                                <button class="btn btn-info btn-icon-text"><span class="text">Next</span><span class="material-icons">arrow_forward</span></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="account-info" role="tabpanel" aria-labelledby="account-info-tab">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-8">
+                        <form>                                
+                            <div class="form-group row">
+                                <label for="userName" class="col-lg-3 col-form-label">Username</label>
+                                <div class="col-lg-9">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Enter username" value="Sisly123" >
+                                    </div>
+                                </div>        
+                            </div>                                
+                            <div class="form-group row">
+                                <label for="email" class="col-lg-3 col-form-label">Email</label>
+                                <div class="col-lg-9">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Enter email" value="Sisly@gmail.com">
+                                    </div>
+                                </div>        
+                            </div>                                
+                            <div class="form-group row">
+                                <label for="language" class="col-lg-3 col-form-label">Language</label>
+                                <div class="col-lg-9">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Enter language" value="English">
+                                    </div>
+                                </div>        
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-lg-4 col-form-label">Communication</label>
+                                <div class="col-lg-8">
+                                    <div class="form-check form-check-inline custom-checkbox pr-4">
+                                        <input type="checkbox" class="custom-control-input" id="email1">
+                                        <label class="custom-control-label" for="email1">Email</label>
+                                    </div>
+                                    <div class="form-check form-check-inline custom-checkbox pr-4">
+                                        <input class="custom-control-input" type="checkbox" id="phone1" value="option2" checked>
+                                        <label class="custom-control-label" for="phone1">Phone</label>
+                                    </div>
+                                    <div class="form-check form-check-inline custom-checkbox pr-4">
+                                        <input class="custom-control-input" type="checkbox" id="letter1" value="option3" checked>
+                                        <label class="custom-control-label" for="letter1">Letter</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="offset-lg-3 col-lg-9">
+                                <button class="btn btn-secondary btn-icon-text"><span class="material-icons">arrow_back</span><span class="text">previous</span></button>
+                                <button class="btn btn-info btn-icon-text"><span class="text">Next</span><span class="material-icons">arrow_forward</span></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="address" role="tabpanel" aria-labelledby="address-tab">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-8">
+                        <form>                                
+                            <div class="form-group row">
+                                <label for="addressLine1" class="col-lg-3 col-form-label">Address line 1</label>
+                                <div class="col-lg-9">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Address line 1" value="8515 Old Green Lane">
+                                    </div>
+                                </div>        
+                            </div>                                
+                            <div class="form-group row">
+                                <label for="addressLine2" class="col-lg-3 col-form-label">Address line 2</label>
+                                <div class="col-lg-9">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Address line 2" value="South Richmond Hill, NY 11419" >
+                                    </div>
+                                </div>        
+                            </div>                                
+                            <div class="form-group row">
+                                <label for="postcode" class="col-lg-3 col-form-label">Postcode</label>
+                                <div class="col-lg-9">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Enter Postcode" value="44203">
+                                    </div>
+                                </div>        
+                            </div>                                
+                            <div class="form-group row">
+                                <label for="city" class="col-lg-3 col-form-label">City</label>
+                                <div class="col-lg-9">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Enter city" value="Washington">
+                                    </div>
+                                </div>        
+                            </div>                                
+                            <div class="form-group row">
+                                <label for="state" class="col-lg-3 col-form-label">State</label>
+                                <div class="col-lg-9">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Enter state" value="Texas" >
+                                    </div>
+                                </div>        
+                            </div>
+                            <div class="form-group row">
+                                <label for="country" class="col-lg-3 col-form-label">Country</label>
+                                <div class="col-lg-9">
+                                    <div class="form-group">
+                                        <select class="form-control">
+                                            <option>United States</option>
+                                            <option>United Kingdom</option>
+                                            <option>Australia</option>
+                                            <option>China</option>
+                                        </select>
+                                    </div>
+                                </div>        
+                            </div>
+                            <div class="offset-lg-3 col-lg-9">
+                                <button class="btn btn-secondary btn-icon-text"><span class="material-icons">arrow_back</span><span class="text">previous</span></button>
+                                <button class="btn btn-info btn-icon-text"><span class="text">Next</span><span class="material-icons">arrow_forward</span></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="preview" role="tabpanel" aria-labelledby="preview-tab">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-8">
+                        <div>
+                            <h6>Your account details</h6>
+                            <p>Sisly Fernandis</p>
+                            <p>Contact:1234567890</p>
+                            <p>Email:Sisly@gmail.com</p>
+                        </div>
+                        <hr/>
+                        <div>
+                            <h6>Address</h6>
+                            <p>Address line 1</p>
+                            <p>Address line2</p>
+                            <p>City, State, Country</p>
+                            <p>435679</p>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-secondary btn-icon-text"><span class="material-icons">arrow_back</span><span class="text">previous</span></button>
+                            <button class="btn btn-info">Finish</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
